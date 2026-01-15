@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web Responsiva</title>
+  <style>
+
+    /* Tipografía base en rem */
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      font-size: 1rem; /* tamaño base */
+    }
+
+    /* Contenedor general usando Grid */
+    .layout {
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* header, main, footer */
+      min-height: 100vh;
+    }
+
+    /* Encabezado */
+    header {
+      background: #0073e6;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+    }
+
+    /* Main con Flexbox para dos columnas */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 2rem 4vw;
+    }
+
+    .main-left,
+    .main-right {
+      flex: 1 1 300px; /* crece y se adapta */
+      padding: 1rem;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    .main-left {
+      background: #e0f7fa;
+    }
+
+    .main-right {
+      background: #ffe0b2;
+    }
+
+    /* Pie de página */
+    footer {
+      background: #333;
+      color: #fafafa;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+
+    /* Media query para pantallas pequeñas */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.7rem;
+      }
+      main {
+        padding: 1rem 2vw;
+      }
+      .main-left,
+      .main-right {
+        flex: 1 1 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- Encabezado -->
+    <header>
+      🧑‍💻 Mi Sitio Web DESARROLLO DE ENTORNOS VIRTUALES
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+      <!-- Columna izquierda -->
+      <section class="main-left">
+        <h2>Sobre mí</h2>
+        <p>
+          ¡Hola! Soy desarrollador web y me encanta crear páginas bonitas y adaptables 📱981432507

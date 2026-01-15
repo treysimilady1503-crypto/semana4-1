@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta Desarrollo Web</title>
+  <style>
+    /* Contenedor de tarjeta */
+    .card {
+      max-width: 400px;
+      margin: 40px auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    /* Imagen de tarjeta */
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Contenido de texto */
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 1.4rem;
+      margin: 0 0 8px;
+      color: #333;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      margin: 0;
+      color: #555;
+    }
+
+    /* Para móviles: aseguramos que el texto siempre queda debajo de la imagen */
+    @media (max-width: 600px) {
+      .card-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Imagen relacionada con desarrollo web desde Pixabay -->
+    <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg"
+         alt="Desarrollo Web y Programación">
+    <div class="card-content">
+      <h2 class="card-title">Desarrollo Web</h2>
+      <p class="card-text">Aprende a construir sitios web desde cero: HTML, CSS, JavaScript y más.</p>
+    </div>
+  </div>
+
+</body>
+</html>
